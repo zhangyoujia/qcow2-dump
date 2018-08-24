@@ -1,0 +1,375 @@
+
+File: cirros.qcow2
+--------------------------------------------------------------------------
+
+magic: 0x514649fb
+version: 2
+backing_file_offset: 0x0
+backing_file_size: 0
+fs_type: sffs
+virtual_size: 41126400 / 39M / 0G
+disk_size: 14680064 / 14M / 0G
+seek_end: 13200896 [0xc96e00] / 12M / 0G
+cluster_bits: 16
+cluster_size: 65536
+crypt_method: 0
+csize_shift: 54
+csize_mask: 255
+cluster_offset_mask: 0x3fffffffffffff
+l1_table_offset: 0x30000
+l1_size: 1
+l1_vm_state_index: 1
+l2_size: 8192
+refcount_order: 4
+refcount_bits: 16
+refcount_block_bits: 15
+refcount_block_size: 32768
+refcount_table_offset: 0x10000
+refcount_table_clusters: 1
+snapshots_offset: 0x0
+nb_snapshots: 0
+incompatible_features: 00000000
+compatible_features: 00000000
+autoclear_features: 00000000
+
+==========================================================================
+
+Active Snapshot:
+--------------------------------------------------------------------------
+L1 Table:       [offset: 0x30000, len: 1]
+
+l1 table[   0], l2 offset: 0x40000  [0x8000000000040000: COPIED]
+	l2 table[   0], data offset: 0x50000  [0x4000000000050000: COMPRESSED] | vdisk offset: 0x0
+	l2 table[ 125], data offset: 0x516e2  [0x40000000000516e2: COMPRESSED] | vdisk offset: 0x7d0000
+	l2 table[ 126], data offset: 0x518b6  [0x40000000000518b6: COMPRESSED] | vdisk offset: 0x7e0000
+	l2 table[ 127], data offset: 0x51a06  [0x4000000000051a06: COMPRESSED] | vdisk offset: 0x7f0000
+	l2 table[ 131], data offset: 0x53234  [0x4000000000053234: COMPRESSED] | vdisk offset: 0x830000
+	l2 table[ 133], data offset: 0x5346d  [0x400000000005346d: COMPRESSED] | vdisk offset: 0x850000
+	l2 table[ 181], data offset: 0x535a2  [0x40000000000535a2: COMPRESSED] | vdisk offset: 0xb50000
+	l2 table[ 182], data offset: 0x576a2  [0x40000000000576a2: COMPRESSED] | vdisk offset: 0xb60000
+	l2 table[ 183], data offset: 0x61165  [0x4000000000061165: COMPRESSED] | vdisk offset: 0xb70000
+	l2 table[ 184], data offset: 0x67b13  [0x4000000000067b13: COMPRESSED] | vdisk offset: 0xb80000
+	l2 table[ 185], data offset: 0x6beee  [0x400000000006beee: COMPRESSED] | vdisk offset: 0xb90000
+	l2 table[ 186], data offset: 0x7192a  [0x400000000007192a: COMPRESSED] | vdisk offset: 0xba0000
+	l2 table[ 187], data offset: 0x90000  [0x8000000000090000: COPIED] | vdisk offset: 0xbb0000
+	l2 table[ 188], data offset: 0xa0000  [0x80000000000a0000: COPIED] | vdisk offset: 0xbc0000
+	l2 table[ 189], data offset: 0xb0000  [0x40000000000b0000: COMPRESSED] | vdisk offset: 0xbd0000
+	l2 table[ 190], data offset: 0xbfbd3  [0x40000000000bfbd3: COMPRESSED] | vdisk offset: 0xbe0000
+	l2 table[ 191], data offset: 0xd0000  [0x80000000000d0000: COPIED] | vdisk offset: 0xbf0000
+	l2 table[ 192], data offset: 0xe0000  [0x80000000000e0000: COPIED] | vdisk offset: 0xc00000
+	l2 table[ 193], data offset: 0xf0000  [0x80000000000f0000: COPIED] | vdisk offset: 0xc10000
+	l2 table[ 194], data offset: 0x100000  [0x4000000000100000: COMPRESSED] | vdisk offset: 0xc20000
+	l2 table[ 195], data offset: 0x110000  [0x8000000000110000: COPIED] | vdisk offset: 0xc30000
+	l2 table[ 196], data offset: 0x120000  [0x8000000000120000: COPIED] | vdisk offset: 0xc40000
+	l2 table[ 197], data offset: 0x130000  [0x8000000000130000: COPIED] | vdisk offset: 0xc50000
+	l2 table[ 198], data offset: 0x140000  [0x4000000000140000: COMPRESSED] | vdisk offset: 0xc60000
+	l2 table[ 199], data offset: 0x150000  [0x8000000000150000: COPIED] | vdisk offset: 0xc70000
+	l2 table[ 200], data offset: 0x160000  [0x8000000000160000: COPIED] | vdisk offset: 0xc80000
+	l2 table[ 201], data offset: 0x170000  [0x8000000000170000: COPIED] | vdisk offset: 0xc90000
+	l2 table[ 202], data offset: 0x180000  [0x4000000000180000: COMPRESSED] | vdisk offset: 0xca0000
+	l2 table[ 203], data offset: 0x190000  [0x8000000000190000: COPIED] | vdisk offset: 0xcb0000
+	l2 table[ 204], data offset: 0x1a0000  [0x80000000001a0000: COPIED] | vdisk offset: 0xcc0000
+	l2 table[ 205], data offset: 0x1b0000  [0x80000000001b0000: COPIED] | vdisk offset: 0xcd0000
+	l2 table[ 206], data offset: 0x1c0000  [0x40000000001c0000: COMPRESSED] | vdisk offset: 0xce0000
+	l2 table[ 207], data offset: 0x1cfe81  [0x40000000001cfe81: COMPRESSED] | vdisk offset: 0xcf0000
+	l2 table[ 208], data offset: 0x1e0000  [0x80000000001e0000: COPIED] | vdisk offset: 0xd00000
+	l2 table[ 209], data offset: 0x1f0000  [0x80000000001f0000: COPIED] | vdisk offset: 0xd10000
+	l2 table[ 210], data offset: 0x200000  [0x4000000000200000: COMPRESSED] | vdisk offset: 0xd20000
+	l2 table[ 211], data offset: 0x210000  [0x8000000000210000: COPIED] | vdisk offset: 0xd30000
+	l2 table[ 212], data offset: 0x220000  [0x8000000000220000: COPIED] | vdisk offset: 0xd40000
+	l2 table[ 213], data offset: 0x230000  [0x8000000000230000: COPIED] | vdisk offset: 0xd50000
+	l2 table[ 214], data offset: 0x240000  [0x4000000000240000: COMPRESSED] | vdisk offset: 0xd60000
+	l2 table[ 215], data offset: 0x250000  [0x8000000000250000: COPIED] | vdisk offset: 0xd70000
+	l2 table[ 216], data offset: 0x260000  [0x8000000000260000: COPIED] | vdisk offset: 0xd80000
+	l2 table[ 217], data offset: 0x270000  [0x8000000000270000: COPIED] | vdisk offset: 0xd90000
+	l2 table[ 218], data offset: 0x280000  [0x4000000000280000: COMPRESSED] | vdisk offset: 0xda0000
+	l2 table[ 219], data offset: 0x290000  [0x8000000000290000: COPIED] | vdisk offset: 0xdb0000
+	l2 table[ 220], data offset: 0x2a0000  [0x80000000002a0000: COPIED] | vdisk offset: 0xdc0000
+	l2 table[ 221], data offset: 0x2b0000  [0x80000000002b0000: COPIED] | vdisk offset: 0xdd0000
+	l2 table[ 222], data offset: 0x2c0000  [0x40000000002c0000: COMPRESSED] | vdisk offset: 0xde0000
+	l2 table[ 223], data offset: 0x2d0000  [0x80000000002d0000: COPIED] | vdisk offset: 0xdf0000
+	l2 table[ 224], data offset: 0x2e0000  [0x80000000002e0000: COPIED] | vdisk offset: 0xe00000
+	l2 table[ 225], data offset: 0x2f0000  [0x80000000002f0000: COPIED] | vdisk offset: 0xe10000
+	l2 table[ 226], data offset: 0x300000  [0x4000000000300000: COMPRESSED] | vdisk offset: 0xe20000
+	l2 table[ 227], data offset: 0x310000  [0x8000000000310000: COPIED] | vdisk offset: 0xe30000
+	l2 table[ 228], data offset: 0x320000  [0x8000000000320000: COPIED] | vdisk offset: 0xe40000
+	l2 table[ 229], data offset: 0x330000  [0x8000000000330000: COPIED] | vdisk offset: 0xe50000
+	l2 table[ 230], data offset: 0x340000  [0x4000000000340000: COMPRESSED] | vdisk offset: 0xe60000
+	l2 table[ 231], data offset: 0x350000  [0x8000000000350000: COPIED] | vdisk offset: 0xe70000
+	l2 table[ 232], data offset: 0x360000  [0x8000000000360000: COPIED] | vdisk offset: 0xe80000
+	l2 table[ 233], data offset: 0x370000  [0x8000000000370000: COPIED] | vdisk offset: 0xe90000
+	l2 table[ 234], data offset: 0x380000  [0x4000000000380000: COMPRESSED] | vdisk offset: 0xea0000
+	l2 table[ 235], data offset: 0x390000  [0x8000000000390000: COPIED] | vdisk offset: 0xeb0000
+	l2 table[ 236], data offset: 0x3a0000  [0x80000000003a0000: COPIED] | vdisk offset: 0xec0000
+	l2 table[ 237], data offset: 0x3b0000  [0x80000000003b0000: COPIED] | vdisk offset: 0xed0000
+	l2 table[ 238], data offset: 0x3c0000  [0x40000000003c0000: COMPRESSED] | vdisk offset: 0xee0000
+	l2 table[ 239], data offset: 0x3cfe89  [0x40000000003cfe89: COMPRESSED] | vdisk offset: 0xef0000
+	l2 table[ 240], data offset: 0x3dfe78  [0x40000000003dfe78: COMPRESSED] | vdisk offset: 0xf00000
+	l2 table[ 241], data offset: 0x3eebc8  [0x40000000003eebc8: COMPRESSED] | vdisk offset: 0xf10000
+	l2 table[ 242], data offset: 0x3feaed  [0x40000000003feaed: COMPRESSED] | vdisk offset: 0xf20000
+	l2 table[ 243], data offset: 0x40e3b9  [0x400000000040e3b9: COMPRESSED] | vdisk offset: 0xf30000
+	l2 table[ 244], data offset: 0x420000  [0x8000000000420000: COPIED] | vdisk offset: 0xf40000
+	l2 table[ 245], data offset: 0x430000  [0x8000000000430000: COPIED] | vdisk offset: 0xf50000
+	l2 table[ 246], data offset: 0x440000  [0x4000000000440000: COMPRESSED] | vdisk offset: 0xf60000
+	l2 table[ 247], data offset: 0x450000  [0x8000000000450000: COPIED] | vdisk offset: 0xf70000
+	l2 table[ 248], data offset: 0x460000  [0x8000000000460000: COPIED] | vdisk offset: 0xf80000
+	l2 table[ 249], data offset: 0x470000  [0x8000000000470000: COPIED] | vdisk offset: 0xf90000
+	l2 table[ 250], data offset: 0x480000  [0x4000000000480000: COMPRESSED] | vdisk offset: 0xfa0000
+	l2 table[ 251], data offset: 0x490000  [0x8000000000490000: COPIED] | vdisk offset: 0xfb0000
+	l2 table[ 252], data offset: 0x4a0000  [0x80000000004a0000: COPIED] | vdisk offset: 0xfc0000
+	l2 table[ 253], data offset: 0x4b0000  [0x40000000004b0000: COMPRESSED] | vdisk offset: 0xfd0000
+	l2 table[ 255], data offset: 0x4b87a2  [0x40000000004b87a2: COMPRESSED] | vdisk offset: 0xff0000
+	l2 table[ 259], data offset: 0x4b8b07  [0x40000000004b8b07: COMPRESSED] | vdisk offset: 0x1030000
+	l2 table[ 260], data offset: 0x4c72c8  [0x40000000004c72c8: COMPRESSED] | vdisk offset: 0x1040000
+	l2 table[ 261], data offset: 0x4d71ec  [0x40000000004d71ec: COMPRESSED] | vdisk offset: 0x1050000
+	l2 table[ 262], data offset: 0x4e5d49  [0x40000000004e5d49: COMPRESSED] | vdisk offset: 0x1060000
+	l2 table[ 263], data offset: 0x4f4d2c  [0x40000000004f4d2c: COMPRESSED] | vdisk offset: 0x1070000
+	l2 table[ 264], data offset: 0x504b91  [0x4000000000504b91: COMPRESSED] | vdisk offset: 0x1080000
+	l2 table[ 265], data offset: 0x514b3e  [0x4000000000514b3e: COMPRESSED] | vdisk offset: 0x1090000
+	l2 table[ 266], data offset: 0x524962  [0x4000000000524962: COMPRESSED] | vdisk offset: 0x10a0000
+	l2 table[ 267], data offset: 0x53475c  [0x400000000053475c: COMPRESSED] | vdisk offset: 0x10b0000
+	l2 table[ 268], data offset: 0x550000  [0x8000000000550000: COPIED] | vdisk offset: 0x10c0000
+	l2 table[ 269], data offset: 0x560000  [0x8000000000560000: COPIED] | vdisk offset: 0x10d0000
+	l2 table[ 270], data offset: 0x570000  [0x8000000000570000: COPIED] | vdisk offset: 0x10e0000
+	l2 table[ 271], data offset: 0x580000  [0x4000000000580000: COMPRESSED] | vdisk offset: 0x10f0000
+	l2 table[ 272], data offset: 0x590000  [0x8000000000590000: COPIED] | vdisk offset: 0x1100000
+	l2 table[ 273], data offset: 0x5a0000  [0x40000000005a0000: COMPRESSED] | vdisk offset: 0x1110000
+	l2 table[ 274], data offset: 0x5afd61  [0x40000000005afd61: COMPRESSED] | vdisk offset: 0x1120000
+	l2 table[ 275], data offset: 0x5bfcfb  [0x40000000005bfcfb: COMPRESSED] | vdisk offset: 0x1130000
+	l2 table[ 276], data offset: 0x5d0000  [0x80000000005d0000: COPIED] | vdisk offset: 0x1140000
+	l2 table[ 277], data offset: 0x5e0000  [0x80000000005e0000: COPIED] | vdisk offset: 0x1150000
+	l2 table[ 278], data offset: 0x5f0000  [0x40000000005f0000: COMPRESSED] | vdisk offset: 0x1160000
+	l2 table[ 279], data offset: 0x5fffc9  [0x40000000005fffc9: COMPRESSED] | vdisk offset: 0x1170000
+	l2 table[ 280], data offset: 0x60fd13  [0x400000000060fd13: COMPRESSED] | vdisk offset: 0x1180000
+	l2 table[ 281], data offset: 0x620000  [0x8000000000620000: COPIED] | vdisk offset: 0x1190000
+	l2 table[ 282], data offset: 0x630000  [0x8000000000630000: COPIED] | vdisk offset: 0x11a0000
+	l2 table[ 283], data offset: 0x640000  [0x4000000000640000: COMPRESSED] | vdisk offset: 0x11b0000
+	l2 table[ 284], data offset: 0x650000  [0x8000000000650000: COPIED] | vdisk offset: 0x11c0000
+	l2 table[ 285], data offset: 0x660000  [0x8000000000660000: COPIED] | vdisk offset: 0x11d0000
+	l2 table[ 286], data offset: 0x670000  [0x4000000000670000: COMPRESSED] | vdisk offset: 0x11e0000
+	l2 table[ 287], data offset: 0x67ffe7  [0x400000000067ffe7: COMPRESSED] | vdisk offset: 0x11f0000
+	l2 table[ 288], data offset: 0x68fd1b  [0x400000000068fd1b: COMPRESSED] | vdisk offset: 0x1200000
+	l2 table[ 289], data offset: 0x69fb89  [0x400000000069fb89: COMPRESSED] | vdisk offset: 0x1210000
+	l2 table[ 290], data offset: 0x6af94f  [0x40000000006af94f: COMPRESSED] | vdisk offset: 0x1220000
+	l2 table[ 291], data offset: 0x6bf767  [0x40000000006bf767: COMPRESSED] | vdisk offset: 0x1230000
+	l2 table[ 292], data offset: 0x6d0000  [0x80000000006d0000: COPIED] | vdisk offset: 0x1240000
+	l2 table[ 293], data offset: 0x6e0000  [0x40000000006e0000: COMPRESSED] | vdisk offset: 0x1250000
+	l2 table[ 294], data offset: 0x6effba  [0x40000000006effba: COMPRESSED] | vdisk offset: 0x1260000
+	l2 table[ 295], data offset: 0x6ffe74  [0x40000000006ffe74: COMPRESSED] | vdisk offset: 0x1270000
+	l2 table[ 296], data offset: 0x70fb16  [0x400000000070fb16: COMPRESSED] | vdisk offset: 0x1280000
+	l2 table[ 297], data offset: 0x71f95a  [0x400000000071f95a: COMPRESSED] | vdisk offset: 0x1290000
+	l2 table[ 298], data offset: 0x72f812  [0x400000000072f812: COMPRESSED] | vdisk offset: 0x12a0000
+	l2 table[ 299], data offset: 0x73f5c9  [0x400000000073f5c9: COMPRESSED] | vdisk offset: 0x12b0000
+	l2 table[ 300], data offset: 0x750000  [0x8000000000750000: COPIED] | vdisk offset: 0x12c0000
+	l2 table[ 301], data offset: 0x760000  [0x4000000000760000: COMPRESSED] | vdisk offset: 0x12d0000
+	l2 table[ 302], data offset: 0x76ff41  [0x400000000076ff41: COMPRESSED] | vdisk offset: 0x12e0000
+	l2 table[ 303], data offset: 0x77fe98  [0x400000000077fe98: COMPRESSED] | vdisk offset: 0x12f0000
+	l2 table[ 304], data offset: 0x790000  [0x8000000000790000: COPIED] | vdisk offset: 0x1300000
+	l2 table[ 305], data offset: 0x7a0000  [0x80000000007a0000: COPIED] | vdisk offset: 0x1310000
+	l2 table[ 306], data offset: 0x7b0000  [0x80000000007b0000: COPIED] | vdisk offset: 0x1320000
+	l2 table[ 307], data offset: 0x7c0000  [0x40000000007c0000: COMPRESSED] | vdisk offset: 0x1330000
+	l2 table[ 308], data offset: 0x7d0000  [0x80000000007d0000: COPIED] | vdisk offset: 0x1340000
+	l2 table[ 309], data offset: 0x7e0000  [0x40000000007e0000: COMPRESSED] | vdisk offset: 0x1350000
+	l2 table[ 310], data offset: 0x7eb35b  [0x40000000007eb35b: COMPRESSED] | vdisk offset: 0x1360000
+	l2 table[ 311], data offset: 0x7f3c9d  [0x40000000007f3c9d: COMPRESSED] | vdisk offset: 0x1370000
+	l2 table[ 312], data offset: 0x7fe217  [0x40000000007fe217: COMPRESSED] | vdisk offset: 0x1380000
+	l2 table[ 313], data offset: 0x808994  [0x4000000000808994: COMPRESSED] | vdisk offset: 0x1390000
+	l2 table[ 314], data offset: 0x813201  [0x4000000000813201: COMPRESSED] | vdisk offset: 0x13a0000
+	l2 table[ 315], data offset: 0x81d5fd  [0x400000000081d5fd: COMPRESSED] | vdisk offset: 0x13b0000
+	l2 table[ 316], data offset: 0x828055  [0x4000000000828055: COMPRESSED] | vdisk offset: 0x13c0000
+	l2 table[ 317], data offset: 0x832b68  [0x4000000000832b68: COMPRESSED] | vdisk offset: 0x13d0000
+	l2 table[ 318], data offset: 0x83c1bf  [0x400000000083c1bf: COMPRESSED] | vdisk offset: 0x13e0000
+	l2 table[ 319], data offset: 0x844a38  [0x4000000000844a38: COMPRESSED] | vdisk offset: 0x13f0000
+	l2 table[ 320], data offset: 0x84ca2c  [0x400000000084ca2c: COMPRESSED] | vdisk offset: 0x1400000
+	l2 table[ 321], data offset: 0x852775  [0x4000000000852775: COMPRESSED] | vdisk offset: 0x1410000
+	l2 table[ 322], data offset: 0x859eea  [0x4000000000859eea: COMPRESSED] | vdisk offset: 0x1420000
+	l2 table[ 323], data offset: 0x867328  [0x4000000000867328: COMPRESSED] | vdisk offset: 0x1430000
+	l2 table[ 324], data offset: 0x876d34  [0x4000000000876d34: COMPRESSED] | vdisk offset: 0x1440000
+	l2 table[ 325], data offset: 0x890000  [0x8000000000890000: COPIED] | vdisk offset: 0x1450000
+	l2 table[ 326], data offset: 0x8a0000  [0x40000000008a0000: COMPRESSED] | vdisk offset: 0x1460000
+	l2 table[ 327], data offset: 0x8b0000  [0x80000000008b0000: COPIED] | vdisk offset: 0x1470000
+	l2 table[ 328], data offset: 0x8c0000  [0x40000000008c0000: COMPRESSED] | vdisk offset: 0x1480000
+	l2 table[ 329], data offset: 0x8d0000  [0x80000000008d0000: COPIED] | vdisk offset: 0x1490000
+	l2 table[ 330], data offset: 0x8e0000  [0x40000000008e0000: COMPRESSED] | vdisk offset: 0x14a0000
+	l2 table[ 331], data offset: 0x8eff41  [0x40000000008eff41: COMPRESSED] | vdisk offset: 0x14b0000
+	l2 table[ 332], data offset: 0x8ffce2  [0x40000000008ffce2: COMPRESSED] | vdisk offset: 0x14c0000
+	l2 table[ 333], data offset: 0x90fa26  [0x400000000090fa26: COMPRESSED] | vdisk offset: 0x14d0000
+	l2 table[ 334], data offset: 0x91f82e  [0x400000000091f82e: COMPRESSED] | vdisk offset: 0x14e0000
+	l2 table[ 335], data offset: 0x928e4a  [0x4000000000928e4a: COMPRESSED] | vdisk offset: 0x14f0000
+	l2 table[ 336], data offset: 0x92f1ba  [0x400000000092f1ba: COMPRESSED] | vdisk offset: 0x1500000
+	l2 table[ 337], data offset: 0x936b62  [0x4000000000936b62: COMPRESSED] | vdisk offset: 0x1510000
+	l2 table[ 338], data offset: 0x93ddd2  [0x400000000093ddd2: COMPRESSED] | vdisk offset: 0x1520000
+	l2 table[ 339], data offset: 0x943641  [0x4000000000943641: COMPRESSED] | vdisk offset: 0x1530000
+	l2 table[ 340], data offset: 0x94b73f  [0x400000000094b73f: COMPRESSED] | vdisk offset: 0x1540000
+	l2 table[ 341], data offset: 0x9549fa  [0x40000000009549fa: COMPRESSED] | vdisk offset: 0x1550000
+	l2 table[ 342], data offset: 0x95dc88  [0x400000000095dc88: COMPRESSED] | vdisk offset: 0x1560000
+	l2 table[ 343], data offset: 0x967472  [0x4000000000967472: COMPRESSED] | vdisk offset: 0x1570000
+	l2 table[ 344], data offset: 0x96d5d1  [0x400000000096d5d1: COMPRESSED] | vdisk offset: 0x1580000
+	l2 table[ 345], data offset: 0x972f7f  [0x4000000000972f7f: COMPRESSED] | vdisk offset: 0x1590000
+	l2 table[ 346], data offset: 0x97c423  [0x400000000097c423: COMPRESSED] | vdisk offset: 0x15a0000
+	l2 table[ 347], data offset: 0x980c47  [0x4000000000980c47: COMPRESSED] | vdisk offset: 0x15b0000
+	l2 table[ 348], data offset: 0x98541d  [0x400000000098541d: COMPRESSED] | vdisk offset: 0x15c0000
+	l2 table[ 349], data offset: 0x9891be  [0x40000000009891be: COMPRESSED] | vdisk offset: 0x15d0000
+	l2 table[ 350], data offset: 0x98e59f  [0x400000000098e59f: COMPRESSED] | vdisk offset: 0x15e0000
+	l2 table[ 351], data offset: 0x99582a  [0x400000000099582a: COMPRESSED] | vdisk offset: 0x15f0000
+	l2 table[ 352], data offset: 0x99a82f  [0x400000000099a82f: COMPRESSED] | vdisk offset: 0x1600000
+	l2 table[ 353], data offset: 0x99ebaf  [0x400000000099ebaf: COMPRESSED] | vdisk offset: 0x1610000
+	l2 table[ 354], data offset: 0x9a3c53  [0x40000000009a3c53: COMPRESSED] | vdisk offset: 0x1620000
+	l2 table[ 355], data offset: 0x9a982a  [0x40000000009a982a: COMPRESSED] | vdisk offset: 0x1630000
+	l2 table[ 356], data offset: 0x9adfc8  [0x40000000009adfc8: COMPRESSED] | vdisk offset: 0x1640000
+	l2 table[ 357], data offset: 0x9b488f  [0x40000000009b488f: COMPRESSED] | vdisk offset: 0x1650000
+	l2 table[ 358], data offset: 0x9b8319  [0x40000000009b8319: COMPRESSED] | vdisk offset: 0x1660000
+	l2 table[ 359], data offset: 0x9be11f  [0x40000000009be11f: COMPRESSED] | vdisk offset: 0x1670000
+	l2 table[ 360], data offset: 0x9c2e05  [0x40000000009c2e05: COMPRESSED] | vdisk offset: 0x1680000
+	l2 table[ 361], data offset: 0x9cb259  [0x40000000009cb259: COMPRESSED] | vdisk offset: 0x1690000
+	l2 table[ 362], data offset: 0x9d0eed  [0x40000000009d0eed: COMPRESSED] | vdisk offset: 0x16a0000
+	l2 table[ 363], data offset: 0x9d6f0a  [0x40000000009d6f0a: COMPRESSED] | vdisk offset: 0x16b0000
+	l2 table[ 364], data offset: 0x9dd075  [0x40000000009dd075: COMPRESSED] | vdisk offset: 0x16c0000
+	l2 table[ 365], data offset: 0x9e35e4  [0x40000000009e35e4: COMPRESSED] | vdisk offset: 0x16d0000
+	l2 table[ 366], data offset: 0x9e9055  [0x40000000009e9055: COMPRESSED] | vdisk offset: 0x16e0000
+	l2 table[ 367], data offset: 0x9f2a69  [0x40000000009f2a69: COMPRESSED] | vdisk offset: 0x16f0000
+	l2 table[ 368], data offset: 0x9fcec0  [0x40000000009fcec0: COMPRESSED] | vdisk offset: 0x1700000
+	l2 table[ 369], data offset: 0xa068f1  [0x4000000000a068f1: COMPRESSED] | vdisk offset: 0x1710000
+	l2 table[ 370], data offset: 0xa0ef90  [0x4000000000a0ef90: COMPRESSED] | vdisk offset: 0x1720000
+	l2 table[ 371], data offset: 0xa14791  [0x4000000000a14791: COMPRESSED] | vdisk offset: 0x1730000
+	l2 table[ 372], data offset: 0xa1bcfd  [0x4000000000a1bcfd: COMPRESSED] | vdisk offset: 0x1740000
+	l2 table[ 373], data offset: 0xa22937  [0x4000000000a22937: COMPRESSED] | vdisk offset: 0x1750000
+	l2 table[ 374], data offset: 0xa27fec  [0x4000000000a27fec: COMPRESSED] | vdisk offset: 0x1760000
+	l2 table[ 375], data offset: 0xa30664  [0x4000000000a30664: COMPRESSED] | vdisk offset: 0x1770000
+	l2 table[ 376], data offset: 0xa38dc4  [0x4000000000a38dc4: COMPRESSED] | vdisk offset: 0x1780000
+	l2 table[ 377], data offset: 0xa3e512  [0x4000000000a3e512: COMPRESSED] | vdisk offset: 0x1790000
+	l2 table[ 378], data offset: 0xa44821  [0x4000000000a44821: COMPRESSED] | vdisk offset: 0x17a0000
+	l2 table[ 379], data offset: 0xa4de67  [0x4000000000a4de67: COMPRESSED] | vdisk offset: 0x17b0000
+	l2 table[ 380], data offset: 0xa5578a  [0x4000000000a5578a: COMPRESSED] | vdisk offset: 0x17c0000
+	l2 table[ 381], data offset: 0xa5ab80  [0x4000000000a5ab80: COMPRESSED] | vdisk offset: 0x17d0000
+	l2 table[ 385], data offset: 0xa5fe5a  [0x4000000000a5fe5a: COMPRESSED] | vdisk offset: 0x1810000
+	l2 table[ 386], data offset: 0xa60e4e  [0x4000000000a60e4e: COMPRESSED] | vdisk offset: 0x1820000
+	l2 table[ 387], data offset: 0xa64726  [0x4000000000a64726: COMPRESSED] | vdisk offset: 0x1830000
+	l2 table[ 388], data offset: 0xa66374  [0x4000000000a66374: COMPRESSED] | vdisk offset: 0x1840000
+	l2 table[ 389], data offset: 0xa67ce7  [0x4000000000a67ce7: COMPRESSED] | vdisk offset: 0x1850000
+	l2 table[ 390], data offset: 0xa6a757  [0x4000000000a6a757: COMPRESSED] | vdisk offset: 0x1860000
+	l2 table[ 391], data offset: 0xa6c122  [0x4000000000a6c122: COMPRESSED] | vdisk offset: 0x1870000
+	l2 table[ 393], data offset: 0xa6d3c8  [0x4000000000a6d3c8: COMPRESSED] | vdisk offset: 0x1890000
+	l2 table[ 397], data offset: 0xa6d604  [0x4000000000a6d604: COMPRESSED] | vdisk offset: 0x18d0000
+	l2 table[ 401], data offset: 0xa6d81f  [0x4000000000a6d81f: COMPRESSED] | vdisk offset: 0x1910000
+	l2 table[ 402], data offset: 0xa71051  [0x4000000000a71051: COMPRESSED] | vdisk offset: 0x1920000
+	l2 table[ 403], data offset: 0xa7ab95  [0x4000000000a7ab95: COMPRESSED] | vdisk offset: 0x1930000
+	l2 table[ 404], data offset: 0xa82a7b  [0x4000000000a82a7b: COMPRESSED] | vdisk offset: 0x1940000
+	l2 table[ 405], data offset: 0xa89a26  [0x4000000000a89a26: COMPRESSED] | vdisk offset: 0x1950000
+	l2 table[ 406], data offset: 0xa91f37  [0x4000000000a91f37: COMPRESSED] | vdisk offset: 0x1960000
+	l2 table[ 407], data offset: 0xa9b764  [0x4000000000a9b764: COMPRESSED] | vdisk offset: 0x1970000
+	l2 table[ 408], data offset: 0xaa386c  [0x4000000000aa386c: COMPRESSED] | vdisk offset: 0x1980000
+	l2 table[ 409], data offset: 0xaa924c  [0x4000000000aa924c: COMPRESSED] | vdisk offset: 0x1990000
+	l2 table[ 410], data offset: 0xaaeea9  [0x4000000000aaeea9: COMPRESSED] | vdisk offset: 0x19a0000
+	l2 table[ 411], data offset: 0xab4197  [0x4000000000ab4197: COMPRESSED] | vdisk offset: 0x19b0000
+	l2 table[ 412], data offset: 0xab785b  [0x4000000000ab785b: COMPRESSED] | vdisk offset: 0x19c0000
+	l2 table[ 413], data offset: 0xaba545  [0x4000000000aba545: COMPRESSED] | vdisk offset: 0x19d0000
+	l2 table[ 414], data offset: 0xabd4fe  [0x4000000000abd4fe: COMPRESSED] | vdisk offset: 0x19e0000
+	l2 table[ 415], data offset: 0xac2a17  [0x4000000000ac2a17: COMPRESSED] | vdisk offset: 0x19f0000
+	l2 table[ 416], data offset: 0xac95b9  [0x4000000000ac95b9: COMPRESSED] | vdisk offset: 0x1a00000
+	l2 table[ 417], data offset: 0xad0eaf  [0x4000000000ad0eaf: COMPRESSED] | vdisk offset: 0x1a10000
+	l2 table[ 418], data offset: 0xad9911  [0x4000000000ad9911: COMPRESSED] | vdisk offset: 0x1a20000
+	l2 table[ 419], data offset: 0xae2890  [0x4000000000ae2890: COMPRESSED] | vdisk offset: 0x1a30000
+	l2 table[ 420], data offset: 0xaeb954  [0x4000000000aeb954: COMPRESSED] | vdisk offset: 0x1a40000
+	l2 table[ 421], data offset: 0xaf3dd8  [0x4000000000af3dd8: COMPRESSED] | vdisk offset: 0x1a50000
+	l2 table[ 422], data offset: 0xafd6ae  [0x4000000000afd6ae: COMPRESSED] | vdisk offset: 0x1a60000
+	l2 table[ 423], data offset: 0xb0652c  [0x4000000000b0652c: COMPRESSED] | vdisk offset: 0x1a70000
+	l2 table[ 424], data offset: 0xb0fd39  [0x4000000000b0fd39: COMPRESSED] | vdisk offset: 0x1a80000
+	l2 table[ 425], data offset: 0xb18f82  [0x4000000000b18f82: COMPRESSED] | vdisk offset: 0x1a90000
+	l2 table[ 426], data offset: 0xb226ca  [0x4000000000b226ca: COMPRESSED] | vdisk offset: 0x1aa0000
+	l2 table[ 427], data offset: 0xb29a87  [0x4000000000b29a87: COMPRESSED] | vdisk offset: 0x1ab0000
+	l2 table[ 428], data offset: 0xb3055f  [0x4000000000b3055f: COMPRESSED] | vdisk offset: 0x1ac0000
+	l2 table[ 429], data offset: 0xb35607  [0x4000000000b35607: COMPRESSED] | vdisk offset: 0x1ad0000
+	l2 table[ 430], data offset: 0xb3a1b9  [0x4000000000b3a1b9: COMPRESSED] | vdisk offset: 0x1ae0000
+	l2 table[ 431], data offset: 0xb3d08d  [0x4000000000b3d08d: COMPRESSED] | vdisk offset: 0x1af0000
+	l2 table[ 432], data offset: 0xb40fcb  [0x4000000000b40fcb: COMPRESSED] | vdisk offset: 0x1b00000
+	l2 table[ 433], data offset: 0xb4a19a  [0x4000000000b4a19a: COMPRESSED] | vdisk offset: 0x1b10000
+	l2 table[ 434], data offset: 0xb4e968  [0x4000000000b4e968: COMPRESSED] | vdisk offset: 0x1b20000
+	l2 table[ 435], data offset: 0xb56282  [0x4000000000b56282: COMPRESSED] | vdisk offset: 0x1b30000
+	l2 table[ 436], data offset: 0xb5f6c6  [0x4000000000b5f6c6: COMPRESSED] | vdisk offset: 0x1b40000
+	l2 table[ 437], data offset: 0xb67cfc  [0x4000000000b67cfc: COMPRESSED] | vdisk offset: 0x1b50000
+	l2 table[ 438], data offset: 0xb6c12a  [0x4000000000b6c12a: COMPRESSED] | vdisk offset: 0x1b60000
+	l2 table[ 439], data offset: 0xb727d1  [0x4000000000b727d1: COMPRESSED] | vdisk offset: 0x1b70000
+	l2 table[ 440], data offset: 0xb7a3e7  [0x4000000000b7a3e7: COMPRESSED] | vdisk offset: 0x1b80000
+	l2 table[ 441], data offset: 0xb82927  [0x4000000000b82927: COMPRESSED] | vdisk offset: 0x1b90000
+	l2 table[ 442], data offset: 0xb8af4f  [0x4000000000b8af4f: COMPRESSED] | vdisk offset: 0x1ba0000
+	l2 table[ 443], data offset: 0xb93335  [0x4000000000b93335: COMPRESSED] | vdisk offset: 0x1bb0000
+	l2 table[ 444], data offset: 0xb9b70d  [0x4000000000b9b70d: COMPRESSED] | vdisk offset: 0x1bc0000
+	l2 table[ 445], data offset: 0xba3bc1  [0x4000000000ba3bc1: COMPRESSED] | vdisk offset: 0x1bd0000
+	l2 table[ 446], data offset: 0xbabffb  [0x4000000000babffb: COMPRESSED] | vdisk offset: 0x1be0000
+	l2 table[ 447], data offset: 0xbb455e  [0x4000000000bb455e: COMPRESSED] | vdisk offset: 0x1bf0000
+	l2 table[ 448], data offset: 0xbbc727  [0x4000000000bbc727: COMPRESSED] | vdisk offset: 0x1c00000
+	l2 table[ 449], data offset: 0xbc4fd3  [0x4000000000bc4fd3: COMPRESSED] | vdisk offset: 0x1c10000
+	l2 table[ 450], data offset: 0xbcd56b  [0x4000000000bcd56b: COMPRESSED] | vdisk offset: 0x1c20000
+	l2 table[ 451], data offset: 0xbd5b62  [0x4000000000bd5b62: COMPRESSED] | vdisk offset: 0x1c30000
+	l2 table[ 452], data offset: 0xbde1b9  [0x4000000000bde1b9: COMPRESSED] | vdisk offset: 0x1c40000
+	l2 table[ 453], data offset: 0xbe22d5  [0x4000000000be22d5: COMPRESSED] | vdisk offset: 0x1c50000
+	l2 table[ 454], data offset: 0xbe7149  [0x4000000000be7149: COMPRESSED] | vdisk offset: 0x1c60000
+	l2 table[ 455], data offset: 0xbf021d  [0x4000000000bf021d: COMPRESSED] | vdisk offset: 0x1c70000
+	l2 table[ 456], data offset: 0xbf60ae  [0x4000000000bf60ae: COMPRESSED] | vdisk offset: 0x1c80000
+	l2 table[ 457], data offset: 0xbfcbbb  [0x4000000000bfcbbb: COMPRESSED] | vdisk offset: 0x1c90000
+	l2 table[ 458], data offset: 0xc0410d  [0x4000000000c0410d: COMPRESSED] | vdisk offset: 0x1ca0000
+	l2 table[ 459], data offset: 0xc0a9fe  [0x4000000000c0a9fe: COMPRESSED] | vdisk offset: 0x1cb0000
+	l2 table[ 460], data offset: 0xc126b2  [0x4000000000c126b2: COMPRESSED] | vdisk offset: 0x1cc0000
+	l2 table[ 461], data offset: 0xc18070  [0x4000000000c18070: COMPRESSED] | vdisk offset: 0x1cd0000
+	l2 table[ 462], data offset: 0xc1c0a9  [0x4000000000c1c0a9: COMPRESSED] | vdisk offset: 0x1ce0000
+	l2 table[ 463], data offset: 0xc2958c  [0x4000000000c2958c: COMPRESSED] | vdisk offset: 0x1cf0000
+	l2 table[ 464], data offset: 0xc3767f  [0x4000000000c3767f: COMPRESSED] | vdisk offset: 0x1d00000
+	l2 table[ 465], data offset: 0xc46b6b  [0x4000000000c46b6b: COMPRESSED] | vdisk offset: 0x1d10000
+	l2 table[ 466], data offset: 0xc55a70  [0x4000000000c55a70: COMPRESSED] | vdisk offset: 0x1d20000
+	l2 table[ 467], data offset: 0xc5dd40  [0x4000000000c5dd40: COMPRESSED] | vdisk offset: 0x1d30000
+	l2 table[ 468], data offset: 0xc65d5e  [0x4000000000c65d5e: COMPRESSED] | vdisk offset: 0x1d40000
+	l2 table[ 469], data offset: 0xc6cdaa  [0x4000000000c6cdaa: COMPRESSED] | vdisk offset: 0x1d50000
+	l2 table[ 470], data offset: 0xc74a75  [0x4000000000c74a75: COMPRESSED] | vdisk offset: 0x1d60000
+	l2 table[ 471], data offset: 0xc7e419  [0x4000000000c7e419: COMPRESSED] | vdisk offset: 0x1d70000
+	l2 table[ 472], data offset: 0xc8631d  [0x4000000000c8631d: COMPRESSED] | vdisk offset: 0x1d80000
+	l2 table[ 473], data offset: 0xc8c587  [0x4000000000c8c587: COMPRESSED] | vdisk offset: 0x1d90000
+	l2 table[ 474], data offset: 0xc94699  [0x4000000000c94699: COMPRESSED] | vdisk offset: 0x1da0000
+
+	L2 Entry: unaligned: 0, invalid: 0, unused: 7906, used: 63, new: 63, zero: 0, compressed: 223
+	------------------------------------------------------------------
+
+Result:
+L1 Table:       unaligned: 0, invalid: 0, unused: 0, used: 1
+L2 Table:       unaligned: 0, invalid: 0, unused: 7906, used: 63
+                new/diff: 63, zero: 0, compressed: 223
+
+==========================================================================
+
+Refcount Table:
+--------------------------------------------------------------------------
+Refcount Table:	[offset: 0x10000, len: 8192]
+
+Result:
+Refcount Table:	unaligned: 0, invalid: 0, unused: 8191, used: 1
+Refcount:       error: 0, leak: 0, unused: 1334, used: 202
+
+==========================================================================
+
+COPIED OFLAG:
+--------------------------------------------------------------------------
+
+Result:
+L1 Table ERROR OFLAG_COPIED: 0
+L2 Table ERROR OFLAG_COPIED: 0
+
+Defrag Release:   22 [1441792 / 1M / 0G]
+Active Cluster:   63 [4128768 / 3M / 0G]
+Active L2 COPIED: 63 [4128768 / 3M / 0G]
+All Used Cluster: 202 [13238272 / 12M / 0G]
+
+==========================================================================
+
+Summary:
+preallocation:  off
+Refcount Table:	unaligned: 0, invalid: 0, unused: 8191, used: 1
+Refcount:       error: 0, leak: 0, unused: 1334, used: 202
+L1 Table:       unaligned: 0, invalid: 0, unused: 0, used: 1
+L2 Table:       unaligned: 0, invalid: 0, unused: 7906, used: 63
+                compressed: 223
+
+##########################################################################
+######             Haha:  qcow2 image is good!  Y(^_^)Y             ######
+##########################################################################
+
+==========================================================================
