@@ -29,6 +29,7 @@ Usage: qcow2-dump [-l] [-f] [-m check|error|dump] [-o refcount|snapshot|all] [-s
 -h | --help
 -v | --version
 -H | --header
+-K | --dmesg
 -l | --lock
 -f | --flags
 -b | --base
@@ -52,18 +53,18 @@ Usage: qcow2-dump [-l] [-f] [-m check|error|dump] [-o refcount|snapshot|all] [-s
 [SAFE OPERATION]:
 eg: qcow2-dump -m info filename
 
-eg: qcow2-dump [-m check] filename
-eg: qcow2-dump [-m check] -c filename
-eg: qcow2-dump [-m check] -l filename
+eg: qcow2-dump [-m check] [-K] filename
+eg: qcow2-dump [-m check] [-K] -c filename
+eg: qcow2-dump [-m check] [-K] -l filename
 
-eg: qcow2-dump -m error filename
-eg: qcow2-dump -m error -c filename
-eg: qcow2-dump -m error -l filename
+eg: qcow2-dump -m error [-K] filename
+eg: qcow2-dump -m error [-K] -c filename
+eg: qcow2-dump -m error [-K] -l filename
 
-eg: qcow2-dump -m dump  filename > /var/dump.log
-eg: qcow2-dump -m dump  -c filename > /var/dump.log
-eg: qcow2-dump -m dump  -f filename > /var/dump.log
-eg: qcow2-dump -m dump  -l filename > /var/dump.log
+eg: qcow2-dump -m dump  [-K] filename > /var/dump.log
+eg: qcow2-dump -m dump  [-K] -c filename > /var/dump.log
+eg: qcow2-dump -m dump  [-K] -f filename > /var/dump.log
+eg: qcow2-dump -m dump  [-K] -l filename > /var/dump.log
 
 [DANGEROUS OPERATION]:
 eg: qcow2-dump -A snapshot id/name filename
