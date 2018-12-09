@@ -24,7 +24,7 @@ How to repair it?    (repairing advice)
 <pre>
 qcow2-dump -h
 
-Usage: qcow2-dump [-l] [-f] [-m check|error|dump] [-o refcount|snapshot|all] [-s active|inactive|all|id/name] filename
+Usage: qcow2-dump [-l] [-f] [-m info|check|error|dump] [-o refcount|snapshot|all] [-s active|inactive|all|id/name] filename
 
 -h | --help
 -v | --version
@@ -44,10 +44,10 @@ Usage: qcow2-dump [-l] [-f] [-m check|error|dump] [-o refcount|snapshot|all] [-s
 -A | --apply    snapshot[N]|snapshot id/name
 -D | --delete   snapshot[N]|snapshot id/name
 -E | --exclude  snapshot[N]|snapshot id/name
--d | --display  none|color [default: color]
+-d | --display  off|color [default: color]
 -o | --output   refcount|snapshot|all [default: all]
 -s | --snapshot active|inactive|all|id/name [default: all]
--R | --repair   none|check|leak|error|reuse|all [default: check]
+-R | --repair   off|check|leak|error|reuse|discard|all [default: check]
 -m | --mode     info|check|error|dump|edit|copy|rebase [default: check]
 
 [SAFE OPERATION]:
@@ -76,7 +76,7 @@ eg: qcow2-dump -E snapshot id/name filename
 eg: qcow2-dump -E snapshot[N] filename
 eg: qcow2-dump -E 0 filename
 
-eg: qcow2-dump -R leak|error|reuse|all filename
+eg: qcow2-dump -R leak|error|reuse|discard|all filename
 
 eg: qcow2-dump -m rebase -F backing_file [-b] filename
 
