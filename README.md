@@ -15,7 +15,7 @@ How to repair it?    (repairing advice)
 </pre>
 
 ## Compile
-`gcc -g -o2 -o qcow2-dump fs_magic.h qcow2_dump.h qcow2_dump.c`
+`gcc -g -O2 -o qcow2-dump fs_magic.h qcow2_dump.h qcow2_dump.c`
 
 
 ## Usage
