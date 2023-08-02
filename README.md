@@ -5,7 +5,7 @@
 ## qcow2-dump
 =========================================================================
 
-Copyright (c) 2016 YOUPLUS
+Copyright (c) 2016-2016 YOUPLUS
 
 Author: YOUPLUS(<zhang_youjia@126.com>)
 
@@ -17,10 +17,6 @@ where's error?       (posistion of error)
 Can it be repaired?
 How to repair it?    (repairing advice)
 </pre>
-
-## Compile
-`gcc -g -O2 -o qcow2-dump fs_magic.h qcow2_dump.h qcow2_dump.c`
-
 
 ## Usage
 `qcow2-dump [opts] <qcow2_image>`

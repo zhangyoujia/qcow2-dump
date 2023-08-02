@@ -1,0 +1,108 @@
+qcow2-dump更新：
+
+V 0.01: 
+    1. L1/L2 table索引表表项unaligned和invalid检查；
+    2. refcount table引用计数表表项unaligned和invalid检查；
+    3. -o选项支持元数据分开检查: 引用计数表/索引表；
+    4. -s选项支持检查指定快照元数据: active|inactive|all|id/name；
+    5. 检查统计信息输出，包括：全局统计信息/单项统计信息；
+    6. 支持三种输出模式：check/error/dump
+       -m check: 只输出结果，镜像是否损坏；
+       -m error: 上面的输出 + 如果有错误，出错位置；
+       -m dump: dump输出，输出所有元数据及检查结果；
+    7. dump模式支持索引表项的flags输出(qcow2_entry_flags): QCOW_OFLAG_COPIED/QCOW_OFLAG_ZERO/QCOW_OFLAG_COMPRESSED；
+    8. L2表表项输出时，输出虚拟磁盘的对应偏移(qcow2_vdisk_offset)：vdisk offset；
+    9. -d color: 支持以彩色醒目输出；
+
+V 0.02: 
+    1. 增加引用计数检查及统计，包括：引用计数错误/引用计数泄漏；
+
+V 0.03: 
+    1. usage中给出命令行参数的使用案例；
+    2. qcow2镜像检查的结果增加qcow2 file status的类型，全部类型包括：S_FLAG/S_CORRUPT/S_WRONG/S_LEAK/S_GOOD；
+    3. 元数据输出优化：只有在二级元数据有输出时，才输出上一级元数据的信息(qcow2_entry_print)；
+    4. 隐藏的小功能：-p选项，支持对未打过快照的qcow2镜像数据分配规律的检查(preallocation: metadata/full分配模式)；
+    5. 代码整理，比之前简洁；
+
+V 0.04: 
+    1. 引用计数检查增加支持refcount bits特性(从qemu-2.3版本开始支持)；
+    2. qcow2 header输出中增加backing file项；
+
+V 0.05: 
+    1. 增加检查qcow2镜像分配模式(preallocation: off/metadata/full)的功能；
+    2. qcow2 header部分需要注意的输出项彩色醒目输出；
+
+V 0.06: 
+    1. 增加引用计数错误/泄漏修复功能(功能不完善：只能修复refcount table表项与L1/L2 table表项不存在unaligned和invalid的情况,
+       并且不支持refcount block重建--qemu-2.0及以下版本也不支持refcount block重建)；
+    2. 增加检查引用计数与QCOW_OFLAG_COPIED标记是否冲突及是否可修复的功能；
+    3. 增加快照回滚功能：主要用于active snapshot的L1/L2表损坏，而inactive snapshotL1/L2表完好的情况(这种情况下qemu-img不好使，
+       因为使用原生qemu-img回滚快照要进行元数据overlap检查，可能检查通不过，需要修改qemu代码跳过元数据overlap检查)；
+    4. 增加设置/清除qcow2头部incompatible_features标志的功能(使用hexedit手动清除qcow2头部corrupt标志，操作不方便)；
+    5. 损坏镜像是否可修复提示；
+    6. 镜像的refcount block是否需要重建的提示(提示调用qemu-img check镜像)；
+    7. 镜像的refcount table miss提示；
+    8. 增加-l选项，检查镜像时是否加锁互斥；
+    9. 可以根据qcow2-dump运行的返回值判断镜像状态(主要用于shell脚本调用的返回值$?判断):
+        < 0，程序运行中遇到异常；
+        = 0，镜像完好；
+        = 1，引用计数泄漏；
+        = 2，引用计数与COPIED标志不匹配错误(没有引用计数错误情况下)；
+        = 3，镜像完好，但是头部被置了corrupt标记；
+        = 4，引用计数错误；
+        = 5，镜像快照头损坏；
+        = 6，镜像损坏；
+    10.增加镜像所在的文件系统类型提示；
+    11.增加help中危险操作提示；
+    12.如果镜像有模板，默认检查模板是否存在；-b选项: 不检查；
+    13.-H选项: qcow2头部字段偏移(offsetof)输出，方便排查镜像损坏问题；
+    14.增加引用计数错误，导致簇被重新分配，两(多)个索引项指向同一簇(active cluster)的检查；
+    15.更新检查引用计数与QCOW_OFLAG_COPIED标记是否冲突并可修复的功能的实现；
+    16.增加检测镜像快照头是否损坏功能及修复建议；
+    17.增强镜像修复功能(修改回滚快照的功能；增加删除指定快照的功能；增加删除指定之外快照的功能)；
+    18.新增修改指定偏移的8个字节的值(主要用于修改损坏的索引表项)
+       l1 table[  69], l2 offset: 0xac3410000
+           l2 table[ 672], data offset: 0xb920d0000 | vdisk offset: 0x8a2a00000
+           l2 table[ 673], data offset: 0xb920e0000 | vdisk offset: 0x8a2a10000
+           l2 table[ 674], data offset: 0xe00038000 [unaligned] | vdisk offset: 0x8a2a20000
+           l2 table[ 675], data offset: 0x87888ab1c4c600 [unaligned] | vdisk offset: 0x8a2a30000
+           l2 table[ 676], data offset: 0xd2000b92110000 [invalid] | vdisk offset: 0x8a2a40000
+           l2 table[ 677], data offset: 0xb92120000 | vdisk offset: 0x8a2a50000
+           l2 table[ 678], data offset: 0xb92130000 | vdisk offset: 0x8a2a60000
+       损坏的L2索引表项是连续的，镜像可以完全修复，如下: (偏移: 0xac3410000 + 674 * 8 = 0xac3411510)
+           data offset: 0xe00038000       修改为 0xb920f0000	(-O 0xac3411510 -V 0xb920f0000)
+           data offset: 0x87888ab1c4c600  修改为 0xb92100000	(-O 0xac3411518 -V 0xb92100000)
+           data offset: 0xd2000b92110000  修改为 0xb92110000	(-O 0xac3411520 -V 0xb92110000)
+
+V 0.07: 
+    1. 增强数据合法性检查；
+    2. 算法优化，簇重用检查的性能指数倍提升；
+    3. 可以通过环境变量设置簇重用检查最大值；
+    4. 检查结果可读性优化；
+    5. 支持检查压缩的镜像: -c选项；
+    6. 增加-m info输出模式，用于镜像损坏时，输出镜像的基本信息；
+    7. 统计打快照后，cow增加的数据量；
+    8. 增加根据索引表重建损坏引用表的功能(rebuild refcount structure重建功能)；
+    9. 增加active簇重用重建功能(rebuild reused active cluster重建功能)；
+    10.统计active snapshot/inactive snapshot/所有已使用簇；
+    11.检查qcow2镜像是否需要磁盘整理；
+
+V 0.08：
+    1. 工具代码5500行左右；
+    2. 检测1TB大小的qcow2镜像，占用70M左右内存；
+    3. 工具可以对镜像的元数据进行全面的检查，包括：索引表、引用表、引用计数、COPIED标志、active cluster被重新分配、
+       镜像快照头、镜像分配模式等；(qemu-img info/check功能有限，qcow2-dump可以完全替代)；
+    4. 提供多种统计信息和提示(建议)信息，镜像状态一目了然；
+    5. 提供镜像修复功能: 引用计数修复与快照回滚/删除 (快照回滚的实现与qemu-img snapshot -a的实现不同，关键时刻可以抢救数据)；
+    6. 提供rebuild refcount structure重建功能；
+    7. 提供rebuild reused active cluster重建功能；
+
+
+[root@root /home/test/qcow2-dump]# ldd qcow2-dump
+	linux-vdso.so.1 =>  (0x00007ffc6dbf7000)
+	libstdc++.so.6 => /usr/lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f41c8c98000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f41c8a16000)
+	libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f41c8800000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f41c8476000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f41c8f9f000)
+
