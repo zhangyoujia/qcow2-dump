@@ -5,7 +5,7 @@
 ## qcow2-dump
 =========================================================================
 
-Copyright (c) 2016-2016 YOUPLUS
+Copyright (c) 2016-2023 YOUPLUS
 
 Author: YOUPLUS(<zhang_youjia@126.com>)
 
@@ -105,6 +105,8 @@ eg: qcow2-dump -m dump  -o snapshot -s 1 filename > /var/snapshot1.log
 eg: qcow2-dump -m dump  -o snapshot -s inactive filename > /var/inactive.log
 eg: qcow2-dump -m dump  -f -o snapshot -s active filename > /var/active.log
 </pre>
+![code](./test/qcow2-dump实现框架.png)
+
 ![useage](./test/qcow2-dump_help.png)
 
 ![qcow2_header](./test/qcow2_header_offsetof.png)
@@ -114,6 +116,8 @@ eg: qcow2-dump -m dump  -f -o snapshot -s active filename > /var/active.log
 
 ## Discussion Email
 ![email](./test/discussion.png)
+
+![email](./test/社区认可.png)
 
 ## Examples
 <pre>
