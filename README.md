@@ -1,9 +1,10 @@
 ## YOUPLUS's tools
 ![YOUPLUS's tools](./YOUPLUS工具箱.png)
 
-
 ## qcow2-dump
 =========================================================================
+
+![code](./test/qcow2-dump实现框架.png)
 
 Copyright (c) 2016-2023 YOUPLUS
 
@@ -105,7 +106,6 @@ eg: qcow2-dump -m dump  -o snapshot -s 1 filename > /var/snapshot1.log
 eg: qcow2-dump -m dump  -o snapshot -s inactive filename > /var/inactive.log
 eg: qcow2-dump -m dump  -f -o snapshot -s active filename > /var/active.log
 </pre>
-![code](./test/qcow2-dump实现框架.png)
 
 ![useage](./test/qcow2-dump_help.png)
 
@@ -118,6 +118,8 @@ eg: qcow2-dump -m dump  -f -o snapshot -s active filename > /var/active.log
 ![email](./test/discussion.png)
 
 ![email](./test/社区认可.png)
+
+![email](./test/社区认可2.png)
 
 ## Examples
 <pre>
