@@ -4,6 +4,8 @@
 ## qcow2-dump
 =========================================================================
 
+![author](./test/author.png)
+
 ![code](./test/qcow2-dump实现框架.png)
 
 Copyright (c) 2016-2023 YOUPLUS
