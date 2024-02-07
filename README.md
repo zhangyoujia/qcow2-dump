@@ -111,8 +111,10 @@ eg: qcow2-dump -m dump  -o snapshot -s inactive filename > /var/inactive.log
 eg: qcow2-dump -m dump  -f -o snapshot -s active filename > /var/active.log
 </pre>
 
+## Help
 ![useage](./test/qcow2-dump_help.png)
 
+## Header
 ![qcow2_header](./test/qcow2_header_offsetof.png)
 
 ## Qcow2 Layout
@@ -140,3 +142,9 @@ qcow2-dump -m error filename
 qcow2-dump -R all filename
 </pre>
 ![rebuild](./test/rebuild_refcount_table.png)
+
+## Subcluster
+![rebuild](./test/subcluster.png)
+
+## Subcluster Bitmap
+![rebuild](./test/subcluster_bitmap.png)
