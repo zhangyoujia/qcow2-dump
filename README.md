@@ -4,11 +4,17 @@
 ## qcow2-dump
 =========================================================================
 
+## qcow2镜像检测与修复
+![author](./test/qcow2镜像检测与修复.png)
+
 ## 个人简介
 ![author](./test/author.png)
 
 ## qcow2-dump实现框架
 ![code](./test/qcow2-dump实现框架.png)
+
+## version
+![code](./test/version.png)
 
 Copyright (c) 2016-2024 YOUPLUS
 
